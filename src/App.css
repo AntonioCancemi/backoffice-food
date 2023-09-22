@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,300&display=swap");
+/* TopNav */
+.navbar {
+  background-color: #0a2f35;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-brand {
+  font-size: 1.6rem;
+  font-family: "Roboto Mono", monospace;
+  color: #ffca7a;
+  transition: all 0.8s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-brand:hover {
+  font-family: "Roboto Mono", monospace;
+  color: #ffca7a;
+  letter-spacing: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-link {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  border-radius: 10px;
+  font-family: "Roboto Mono", monospace;
+  color: #ffe2b7 !important;
+  transition: all 0.5s;
 }
-
-.App-link {
-  color: #61dafb;
+.nav-link:hover {
+  background-color: #0f444d;
+  -webkit-box-shadow: 5px 5px 0px 0px #f56038;
+  box-shadow: 5px 5px 0px 0px #f56038;
+  color: #f7a325 !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link.active {
+  background-color: #0f444d;
+  -webkit-box-shadow: 5px 5px 0px 0px #f56038;
+  box-shadow: 5px 5px 0px 0px #f56038;
+  color: #f7a325 !important;
+  color: #f7a325 !important;
 }
+.logout {
+  border: 1px solid #f56038;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  font-family: "Roboto Mono", monospace;
+  color: #f56038 !important;
+  transition: all 0.5s;
+}
+.logout:hover {
+  background-color: #0f444d;
+  font-family: "Roboto Mono", monospace;
+  color: #f56038 !important;
+  transition: all 0.5s;
+}
+/* LoginFrom */
+.login-card {
+  width: 400px !important;
+}
+/* Home */
+.welcome-title h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Roboto Mono", monospace;
+  color: #ffca7a;
+}
+.container-button-home div {
+  cursor: pointer;
+  font-family: "Roboto Mono", monospace;
+  height: 200px;
+  background-color: #ffca7a;
+  border-radius: 10px;
+  border: 4px solid #f7a325;
+  color: #12492f;
+  font-size: 3rem;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.container-button-home div:hover {
+  font-family: "Roboto Mono", monospace;
+  height: 200px;
+  background-color: #f7a325;
+  border-radius: 10px;
+  border: 4px solid #ffca7a;
+  color: #12492f;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.box-description {
+  margin-top: 40px;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Roboto Mono", monospace;
+  color: #ffca7a;
+}
+.box-description p {
+  font-size: 1.4rem;
+  color: #ffe2b7;
+}
+.box-credit p {
+  font-size: 1.4rem;
+  color: #ffe2b7;
+}
+/* Product Page */
